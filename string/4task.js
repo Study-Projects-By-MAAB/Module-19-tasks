@@ -5,9 +5,11 @@
 let string = "If a given string has either x, replace x by y. if the given string has X, replace it by Y."
 
 let splited = string.split('')
+
 let replaced = ''
 let final = ''
 // console.log(splited);
+
 for (i = 0; i < splited.length; i++) {
     if (splited[i].includes('x')) {
         splited[i] = "y";
@@ -15,12 +17,12 @@ for (i = 0; i < splited.length; i++) {
     replaced = replaced + splited[i];
 // console.log(replaced);
 
-    if (replaced[i].includes("X")) {
-        replaced[i] = "Y";
+    if (splited[i].includes("X")) {
+        splited[i] = "Y";
     }
-    final = final + replaced[i]
-    console.log(final);
+    final = final + splited[i]
 }
+console.log(final);
 
 
 // for (i = 0; i < splited.length; i++) {
